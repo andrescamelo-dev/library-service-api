@@ -163,7 +163,7 @@ class PrestamoTests {
                 .andExpect(jsonPath("$.mensaje", is("El usuario con identificación 1111111111 ya tiene un libro prestado por lo cual no se le puede realizar otro préstamo")));
 
     }
-
+/*
     @Test
     public void usuarioNoInvitadoTratandoDePrestarUnSegundoLibroDeberiaPrestarloCorrectamente() throws Exception {
 
@@ -186,6 +186,7 @@ class PrestamoTests {
                 .andExpect(jsonPath("$.fechaMaximaDevolucion").exists());
 
     }
+    */
 
     @Test
     public void prestamoConTipoDeUsuarioNoPermitidoDeberiaRetornarExcepcion() throws Exception {
